@@ -1,0 +1,138 @@
+:root {
+  --border-box: #e0dcdc;
+  --input: #5f6368;
+  --button-color-blue: #1a73e8;
+  --button-background: #216acb;
+  --button-color-gray: #757575;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+input {
+  display: block;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 448px;
+  height: 500px;
+  border: 1px solid var(--border-box);
+  border-radius: 8px;
+
+  padding: 40px;
+  text-align: center;
+}
+
+.box img {
+  width: 75px;
+}
+
+.box h1 {
+  padding-top: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.box h3 {
+  padding-top: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #202124;
+}
+
+.box-info {
+  padding-top: 28px;
+  height: 180px;
+}
+
+.box-info input {
+  width: 100%;
+  padding: 15px 17px;
+  font-size: 18px;
+  color: var(--input);
+  border: 1px solid var(--border-box);
+  border-radius: 3px;
+}
+
+.box-info button,
+a {
+  width: 100%;
+  margin: 9px 0 3px;
+  text-align: start;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--button-color-blue);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: inherit;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+
+.more-info {
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: var(--button-color-gray);
+  text-align: start;
+  display: inline-block;
+  width: 100%;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 10px 24px;
+  color: #fff;
+  background: var(--button-background);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer {
+  width: 447px;
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+}
+
+.footer select {
+  border: none;
+  color: var(--button-color-gray);
+}
+
+.options a {
+  padding: 6px 16px;
+  color: var(--button-color-gray);
+  font-size: 14px;
+}
